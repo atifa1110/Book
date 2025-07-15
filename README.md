@@ -1,6 +1,10 @@
 # 📚 BookBuddy - Library Management System
 
-A modern full-stack library management application built with TypeScript, React, and Express.js.
+BookBuddy is a modern, full-stack library management system built using TypeScript, React, and Express.js. It is designed to serve both library users and administrators, offering a seamless experience for borrowing, tracking, and managing books in a digital environment.
+
+For regular users, BookBuddy provides an intuitive interface to browse available books, search by category or title, check availability, and borrow or return books with ease. Users can also view their current loans, due dates, and borrowing history.
+
+For administrators, BookBuddy includes a secure admin panel to manage the book catalog, monitor borrowing activity, and oversee user interactions. Admins can add new books, update existing entries, track overdue returns, and manage user roles and access levels.
 
 ---
 
