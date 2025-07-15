@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# 📚 BookBuddy - Library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack library management application built with TypeScript, React, and Express.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack Overview
 
-## Expanding the ESLint configuration
+### 🔸 Frontend
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Radix UI
+- @tailwindcss/typography
+- tailwindcss-animate
+- tailwind-merge
+- TanStack Query (React Query)
+- React Hook Form
+- Zod
+- Wouter
+- Framer Motion
+- Lucide React
+- React Icons
+- date-fns
+- class-variance-authority
+- clsx
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔹 Backend
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Node.js
+- Express.js
+- TypeScript
+- Passport.js
+- passport-local
+- Express Session
+- connect-pg-simple
+- PostgreSQL (via Neon)
+- @neondatabase/serverless
+- Drizzle ORM
+- drizzle-zod
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🛠️ Tooling & Dev Experience
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- tsx
+- esbuild
+- Drizzle Kit
+- PostCSS
+- Autoprefixer
+- @vitejs/plugin-react
+- TypeScript compiler
+- zod-validation-error
+- @types (for type definitions)
+
+### 🌐 Hosting & Deployment
+
+- Neon Database
+
+---
+
+## 🔧 Key Features
+
+- User authentication with secure sessions
+- Book browsing, search, and filtering
+- Loan system with borrow/return functionality
+- Admin panel for managing books and loans
+- Fully responsive UI
+- End-to-end type safety (frontend, backend, database)
+
+---
+
+## 🏁 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Set up database
+npm run db:push
+npm run db:seed
+
+# Start development server
+npm run dev
